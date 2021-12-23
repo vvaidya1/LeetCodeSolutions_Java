@@ -1,3 +1,4 @@
+//O(n) time | O(1) space
 class ReverseString {
     public void reverseString(char[] s) {
         int start = 0, end = s.length - 1;
