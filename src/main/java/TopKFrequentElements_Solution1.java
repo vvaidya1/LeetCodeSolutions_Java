@@ -7,11 +7,7 @@ public class TopKFrequentElements_Solution1 {
         Map<Integer, Integer> frequency = new HashMap<>();
 
         for (int num : nums) {
-            if (frequency.containsKey(num)) {
-                int val = frequency.get(num) + 1;
-                frequency.put(num, val);
-            } else
-                frequency.put(num, 1);
+            frequency.put(num, frequency.getOrDefault(num, 0) + 1);
         }
 
         int[] result = new int[k];
