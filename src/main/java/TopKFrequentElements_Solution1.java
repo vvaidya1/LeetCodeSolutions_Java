@@ -1,7 +1,10 @@
 import java.util.HashMap;
 import java.util.Map;
 
-//O(n * k) time | O(n + k) where n = total elements, k = number of frequent elements to return
+/*
+ * https://leetcode.com/problems/top-k-frequent-elements/
+ * O(n * k) time | O(n + k) where n = total elements, k = number of frequent elements to return
+ */
 public class TopKFrequentElements_Solution1 {
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> frequency = new HashMap<>();
