@@ -4,7 +4,7 @@ import java.util.*;
  * https://leetcode.com/problems/subsets/
  * O(n.2^n) time complexity | O(n.2^n) space complexity
  */
-public class Subsets {
+public class Subsets_Iterative {
     public List<List<Integer>> subsets(int[] nums) {
         if (nums.length == 0) return new ArrayList<>();
 
