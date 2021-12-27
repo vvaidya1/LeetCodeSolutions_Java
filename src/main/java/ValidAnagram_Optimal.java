@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 /*
  * https://leetcode.com/problems/valid-anagram/
- * O(n.log.n) time | O(n) space where n and m are lengths of input strings and n > m
+ * O(n) time | O(1) space where n and m are lengths of input strings and n > m
  */
 public class ValidAnagram_Optimal {
     public boolean isAnagram(String s, String t) {
