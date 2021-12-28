@@ -4,19 +4,18 @@
  */
 public class UniquePahs_DP {
     public int uniquePaths(int m, int n) {
-        int[][] uniquePaths = new int[m+1][n+1];
-        for (int i = 1; i <= m; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (i == 1 || j == 1)
-                    uniquePaths[i][j] = 1;
-                else {
-                    int pathsUp = uniquePaths[i-1][j];
-                    int pathsLeft = uniquePaths[i][j-1];
-                    uniquePaths[i][j] = pathsUp + pathsLeft;
-                }
+        int[][] uniquePaths = new int[m][n];
+        uniquePaths[0][0] = 1;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i - 1 >= 0)
+                    uniquePaths[i][j] += uniquePaths[i-1][j];
+
+                if (j - 1 >= 0)
+                    uniquePaths[i][j] += uniquePaths[i][j-1];
             }
         }
 
-        return uniquePaths[m][n];
+        return uniquePaths[m-1][n-1];
     }
 }
