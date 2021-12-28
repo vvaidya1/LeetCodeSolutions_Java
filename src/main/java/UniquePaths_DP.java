@@ -2,7 +2,7 @@
  * https://leetcode.com/problems/unique-paths/
  * O(n+m) time | O(m+n) space
  */
-public class UniquePahs_DP {
+public class UniquePaths_DP {
     public int uniquePaths(int m, int n) {
         int[][] uniquePaths = new int[m][n];
         uniquePaths[0][0] = 1;
