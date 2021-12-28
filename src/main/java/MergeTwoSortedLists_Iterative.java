@@ -2,7 +2,7 @@ import Common.ListNode;
 
 /*
  * https://leetcode.com/problems/merge-two-sorted-lists/
- * O(m + n) time | O(1) space where m and n are the number of elements in the input lists
+ * O(min(m,n)) time | O(1) space where m and n are the number of elements in the input lists
  */
 public class MergeTwoSortedLists_Iterative {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
