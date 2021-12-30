@@ -2,7 +2,7 @@ import java.util.*;
 
 /*
  * https://leetcode.com/problems/palindrome-partitioning/
- * O(n.2^n) time | O(n^2)
+ * O(n.2^n) time | O(n^2) space
  */
 public class PalindromePartitioning_BackTracking {
     public List<List<String>> partition(String s) {
