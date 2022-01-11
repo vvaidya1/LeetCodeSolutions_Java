@@ -23,11 +23,12 @@ public class UniquePaths_MathematicalSolution {
         */
 
         int N = m + n - 2;
-        int res = 1, r = m - 1;
+        int r = m - 1;
+        double res = 1;
 
         for (int i = 1; i <= r; i++) {
-            res *= (N - r + i) / i;
+            res = res * (N - r + i) / i;
         }
-        return res;
+        return (int)res;
     }
 }
