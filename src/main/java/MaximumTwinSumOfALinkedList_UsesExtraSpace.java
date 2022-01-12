@@ -4,7 +4,7 @@ import Common.ListNode;
  * https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/
  * O(n) time | O(n) space
  */
-public class TwinSumOfALinkedList_UsesExtraSpace {
+public class MaximumTwinSumOfALinkedList_UsesExtraSpace {
     public int pairSum(ListNode head) {
         if (head == null)
             return 0;
