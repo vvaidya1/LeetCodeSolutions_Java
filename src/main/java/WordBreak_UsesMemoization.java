@@ -2,7 +2,7 @@ import java.util.*;
 
 /*
  * https://leetcode.com/problems/word-break/
- * O(n) | O(n) space
+ * O(n.n.n) time | O(n) space - time complexity n.n for actual algo and additional n for extracting substrings
  */
 public class WordBreak_UsesMemoization {
     public boolean wordBreak(String s, List<String> wordDict) {
