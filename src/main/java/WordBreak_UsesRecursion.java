@@ -18,10 +18,8 @@ public class WordBreak_UsesRecursion {
         if (s.isEmpty() || wordDict.contains(s))
             return true;
 
-        for (int i = 0; i < s.length(); i++) {
-            String word = (i == s.length() - 1) ? s.substring(i) : s.substring(0, i + 1);
-
-            if (wordDict.contains(word) && wordBreakHelper(s.substring(i + 1), wordDict))
+        for (int i = 0; i <= s.length(); i++) {
+            if (wordDict.contains(s.substring(0, i)) && wordBreakHelper(s.substring(i), wordDict))
                 return true;
         }
         return false;
