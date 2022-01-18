@@ -2,7 +2,8 @@ import java.util.*;
 
 /*
  * https://leetcode.com/problems/combination-sum/
- * O(k.2^t) time | O(k.x) space - where t is the max number of times you decide to pick a particular element and k is average length
+ * O(k.2^t) time | O(k.x) space - where t is the max number of times you decide to pick a particular element,
+ * k is average length (ignoring auxiliary space taken by recursive stack), and x is number of possible combinations
  * Reference https://www.youtube.com/watch?v=OyZFFqQtu98&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=50
  */
 public class CombinationSum {
