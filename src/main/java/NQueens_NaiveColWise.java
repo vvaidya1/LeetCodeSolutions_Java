@@ -1,11 +1,12 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /*
  * https://leetcode.com/problems/n-queens/
  * O(n^3) time | O(n^2) space
+ * Reference https://www.youtube.com/watch?v=i05Ju7AftcM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=58
+ * Start placing column wise
  */
-public class NQueens {
+public class NQueens_NaiveColWise {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result = new ArrayList<>();
 
