@@ -4,11 +4,11 @@ import java.util.*;
  * https://leetcode.com/problems/min-stack/
  * O(1) time | O(n) space
  */
-public class MinStack {
+public class MinStack_UsesMap {
     Map<Integer, MinStackInfo> map;
     int top;
 
-    public MinStack() {
+    public MinStack_UsesMap() {
         map = new HashMap<>();
         top = -1;
     }
@@ -54,8 +54,8 @@ class MinStackInfo {
 }
 
 /*
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
+ * Your MinStack_UsesMap object will be instantiated and called as such:
+ * MinStack_UsesMap obj = new MinStack_UsesMap();
  * obj.push(val);
  * obj.pop();
  * int param_3 = obj.top();
