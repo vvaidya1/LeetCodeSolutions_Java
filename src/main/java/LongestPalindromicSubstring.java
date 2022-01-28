@@ -3,10 +3,12 @@
  * https://leetcode.com/problems/longest-palindromic-substring/
  * O(n^2) time | O(1) space
  */
-public class LongestPallindromicSubstring {
+public class LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
-        int start = 0, end = 0;
+        if (s == null || s.isEmpty())
+            return null;
 
+        int start = 0, end = 0;
         for (int i = 0; i < s.length(); i++) {
             int len1 = expandFromCenter(s, i, i);
             int len2 = expandFromCenter(s, i, i + 1);
