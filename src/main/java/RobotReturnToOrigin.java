@@ -1,3 +1,7 @@
+/*
+ * https://leetcode.com/problems/robot-return-to-origin/
+ * O(n) time | O(1) space
+ */
 public class RobotReturnToOrigin {
     public boolean judgeCircle(String moves) {
         int horizontalMove = 0, verticalMove = 0;
