@@ -1,3 +1,7 @@
+/*
+ * https://leetcode.com/problems/plus-one/
+ * O(n) time | O(1) space
+ */
 public class PlusOne {
     public int[] plusOne(int[] digits) {
         for (int i = digits.length - 1; i >= 0; i--) {
