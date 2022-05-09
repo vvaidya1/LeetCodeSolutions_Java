@@ -1,6 +1,6 @@
 /*
  * https://leetcode.com/problems/battleships-in-a-board/
- * O(m.n) time | O(1) space
+ * O(m.n) time | O(1) space where m = number of rows and n = number of columns
  */
 public class BattleShipsInABoard {
     public int countBattleships(char[][] board) {
