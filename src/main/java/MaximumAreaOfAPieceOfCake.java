@@ -18,7 +18,7 @@ public class MaximumAreaOfAPieceOfCake {
         maxH = Math.max(maxH, h - prevH);
 
         for (int vCut : verticalCuts) {
-            maxW = Math.max(maxH, vCut - prevW);
+            maxW = Math.max(maxW, vCut - prevW);
             prevW = vCut;
         }
         maxW = Math.max(maxW, w - prevW);
